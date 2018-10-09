@@ -2,6 +2,7 @@
   "name": "Getting Started Example",
   "version": "1.0",
   "description": "Build an Extension",
+  "options_page": "options.html",
   "manifest_version": 2,
   "icons": {
     "16":  "images/icon16.png",
