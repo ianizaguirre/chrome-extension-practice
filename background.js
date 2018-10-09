@@ -7,7 +7,8 @@ chrome.runtime.onInstalled.addListener(function() {
   // ---- Part2 ----
   // It is up to the extension to tell the browser when the user can interact with popup.html.
 
-  // --> Use declarative injection for content scripts that should be automatically run on SPECIFIED  pages.
+  // use the "declarative content API" to set rules in the background script for WHEN the popup is available to users.
+
   chrome.declarativeContent.onPageChanged.removeRules(undefined, function() {
     chrome.declarativeContent.onPageChanged.addRules([
       {
